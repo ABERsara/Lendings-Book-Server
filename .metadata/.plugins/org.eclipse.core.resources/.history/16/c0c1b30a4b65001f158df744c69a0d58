@@ -1,0 +1,32 @@
+package Lendi.models;
+
+
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table
+public class Customer {
+  public Customer() {
+	  
+  }
+  @Id
+  @Column(length = 9)
+  private String id; // Primary key with maximum length of 9 characters
+
+
+@Column 
+private String fName;
+ 
+
+@Column
+private String lName;
+
+@Column
+private String phone;
+
+}

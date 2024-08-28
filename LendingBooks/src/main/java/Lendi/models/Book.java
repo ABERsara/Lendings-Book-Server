@@ -1,0 +1,68 @@
+package Lendi.models;
+
+
+import java.util.Date;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
+
+@Entity
+@Table
+public class Book {
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private int id;
+
+@Column (length=9)
+private String IdAuthor;
+ 
+@Temporal (TemporalType.DATE)
+@Column
+private Date publicationDate;
+
+@Column
+private String nameBook;
+
+public Book() {}
+
+public String getNameBook() {
+	return nameBook;
+}
+
+public void setNameBook(String nameBook) {
+	this.nameBook = nameBook;
+}
+
+//getters and setters
+public int getId() {
+	return id;
+}
+
+public void setId(int id) {
+	this.id = id;
+}
+
+public String getIdAuthor() {
+	return IdAuthor;
+}
+
+public void setIdAuthor(String idAuthor) {
+	IdAuthor = idAuthor;
+}
+
+public Date getPublicationDate() {
+	return publicationDate;
+}
+
+public void setPublicationDate(Date date) {
+	this.publicationDate= date;
+}
+
+
+}

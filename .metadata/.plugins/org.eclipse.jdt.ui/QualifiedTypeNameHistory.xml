@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Lendi.models.Book"/>
+    <fullyQualifiedTypeName name="Lendi.services.iservices.iBookService"/>
+    <fullyQualifiedTypeName name="Lendi.daoRepository.CustomerRepository"/>
+    <fullyQualifiedTypeName name="Lendi.services.iservices.iCustomerService"/>
+    <fullyQualifiedTypeName name="Lendi.models.Customer"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.data.repository.CrudRepository"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="Lendi.services.iservices.iLendingService"/>
+    <fullyQualifiedTypeName name="Lendi.daoRepository.LendingRepository"/>
+    <fullyQualifiedTypeName name="Lendi.models.Lending"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,5 @@
+package Lendi.services.services;
+
+public class LendingService {
+
+}

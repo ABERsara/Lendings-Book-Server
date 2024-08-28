@@ -1,0 +1,5 @@
+package Lendi.daoRepository;
+
+public interface CustomerRepository {
+
+}

@@ -1,0 +1,5 @@
+package Lendi.services.iservices;
+
+public class iBookService {
+
+}

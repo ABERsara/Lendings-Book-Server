@@ -1,0 +1,21 @@
+# Spring Boot specific
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/*Application.java
+
+# IDE-specific
+.idea/
+*.iml
+*.iws
+*.ipr
+*.iws.xml
+*.properties
+.vscode/
+
+# Build and dependencies
+/build/
+logs/
+/*.log
+logs/*.log
+*.iml
+.idea/

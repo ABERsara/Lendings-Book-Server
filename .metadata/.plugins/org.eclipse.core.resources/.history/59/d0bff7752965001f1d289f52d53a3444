@@ -1,0 +1,10 @@
+package Lendi.main;
+
+public class LendiApplication {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

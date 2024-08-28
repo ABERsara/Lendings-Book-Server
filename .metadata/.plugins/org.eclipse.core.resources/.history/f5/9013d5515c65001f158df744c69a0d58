@@ -1,0 +1,8 @@
+package Lendi.daoRepository;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface LendingRepository extends CrudRepository(Lending,Integer){
+
+}

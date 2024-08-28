@@ -1,0 +1,46 @@
+package Lendi.services.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import Lendi.daoRepository.LendingRepository;
+import Lendi.models.Lending;
+import Lendi.services.iservices.iLendingService;
+
+@Service
+
+public class LendingService implements iLendingService {
+@Autowired
+private LendingRepository lendRep;
+//החזרת כל ההשאלות
+public List<Object[]> getAllLendingsWithBookAndCustomerInfo() {
+    return lendRep.findAllLendingsWithBookAndCustomerInfo();
+}
+//הוספת השאלה
+public boolean addLending(Lending lending) {
+	lendRep.save(lending);
+	return true;
+}
+//עדכון שספר הוחזר
+//Update a book to mark it as returned
+public boolean updateReturned(int id) {
+ List<Lending> lendings = (List<Lending>)lendRep.findAll();
+ Optional<Lending> lendingOptional = lendings.stream()
+         .filter(existingBook -> existingBook.getLendingId() == id)
+         .findFirst();
+ //if the lending exists, it will appear by "isPresent" and  receives with "get"
+ if (lendingOptional.isPresent()) {
+     Lending lend = lendingOptional.get();
+     lend.setReturned(true);
+     
+     return true;
+ }
+ 
+ return false;
+}
+
+
+}

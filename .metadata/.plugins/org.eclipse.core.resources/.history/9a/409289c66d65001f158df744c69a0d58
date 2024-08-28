@@ -1,0 +1,32 @@
+package Lendi.services.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import Lendi.daoRepository.LendingRepository;
+import Lendi.models.Lending;
+import Lendi.services.iservices.iLendingService;
+
+@Service
+
+public class LendingService implements iLendingService {
+@Autowired
+private LendingRepository lendRep;
+//החזרת כל ההשאלות
+public List<Lending>GetAll(){
+	return null;
+}
+//הוספת השאלה
+public boolean add(Lending lending) {
+	return true;
+}
+//עדכון שספר הוחזר
+public boolean updateReturned(int id) {
+	
+	return true;
+}
+
+
+}
